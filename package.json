@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "frontend1_modern_portfolio",
+  "version": "0.0.1",
+  "description": "Modern portfolio for Development skills: front-end course",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Marko Jutila",
+  "license": "MIT"
+}
