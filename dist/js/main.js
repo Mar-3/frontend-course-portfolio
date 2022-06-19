@@ -1,6 +1,6 @@
 // select DOM items (Document Object Model)
 
-const menuBtn = document.querySelector('.btn-menu');
+const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuBranding = document.querySelector('.menu-branding');
 const menuNav = document.querySelector('.menu-nav');
@@ -19,8 +19,7 @@ function toggleMenu() {
         menu.classList.add('show');
         menuNav.classList.add('show');
         menuBranding.classList.add('show');
-
-        navItems.forEach(item => item.classList.add(show));
+        navItems.forEach(item => item.classList.add('show'));
 
         // Set menu state
         showMenu = true;
@@ -30,10 +29,9 @@ function toggleMenu() {
         menuNav.classList.remove('show');
         menuBranding.classList.remove('show');
 
-        navItems.forEach(item => item.classList.remove(show));
+        navItems.forEach(item => item.classList.remove('show'));
 
         // Set menu state
         showMenu = false;
-
     }
 }
